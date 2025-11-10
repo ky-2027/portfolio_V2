@@ -1,4 +1,4 @@
-/* ========== Base & Reset ========== */
+/* Base & Reset */
 * {
   margin: 0;
   padding: 0;
@@ -7,143 +7,137 @@
 }
 
 body {
-  background-color: #f0f4f8;
-  color: #1f2d3d;
+  background-color: #e8f5e9; /* calming green */
+  color: #1b1b1b;
   line-height: 1.6;
   scroll-behavior: smooth;
 }
 
-/* ========== Scroll Up Button ========== */
-#scrollUp {
-  position: fixed;
-  bottom: 2rem;
-  right: 2rem;
-  background-color: #1e90ff;
-  color: #fff;
-  border: none;
-  padding: 0.8rem 1rem;
-  border-radius: 50%;
-  font-size: 1.5rem;
-  display: none;
-  cursor: pointer;
-  z-index: 100;
-}
-
-/* ========== Navigation ========== */
+/* Navigation */
 nav {
-  background-color: #ffffff;
+  background: #a5d6a7;
   padding: 1rem 0;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
   position: sticky;
   top: 0;
   z-index: 10;
 }
 
 nav ul {
-  list-style: none;
   display: flex;
   justify-content: center;
   gap: 2rem;
+  list-style: none;
 }
 
 nav a {
-  text-decoration: none;
-  color: #1e90ff;
+  color: #1b5e20;
   font-weight: 600;
+  text-decoration: none;
 }
 
 nav a:hover {
-  color: #0a66c2;
+  color: #2e7d32;
 }
 
-/* ========== Header ========== */
+/* Header */
 header {
+  padding: 4rem 1rem;
   text-align: center;
-  padding: 5rem 1rem 3rem 1rem;
 }
 
 header h1 {
-  font-size: 2.8rem;
-  color: #1e90ff;
+  font-size: 2.5rem;
+  color: #2e7d32;
+  margin-bottom: 0.5rem;
 }
 
 header p {
-  font-size: 1.2rem;
-  color: #4f6478;
-  margin-top: 0.5rem;
+  font-size: 1.1rem;
+  color: #1b5e20;
 }
 
-/* ========== Sections ========== */
+/* Sections */
 section {
-  padding: 4rem 1rem;
   max-width: 900px;
   margin: 0 auto;
-  text-align: center;
+  padding: 3rem 1rem;
 }
 
 section h2 {
-  color: #1e90ff;
   font-size: 2rem;
-  margin-bottom: 2rem;
+  color: #2e7d32;
+  margin-bottom: 1.5rem;
 }
 
-/* ========== Gallery / Projects / WIP ========== */
+/* Gallery / Projects */
 .gallery {
   display: flex;
   flex-direction: column;
-  gap: 2.5rem;
+  gap: 2rem;
 }
 
 .project img {
   width: 100%;
-  height: 350px;
+  max-height: 400px;
   object-fit: cover;
   border-radius: 10px;
   cursor: pointer;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.project img:hover {
-  transform: scale(1.02);
-  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+/* Arrow toggle */
+.img-container {
+  position: relative;
 }
 
+.arrow {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 2rem;
+  color: #1b5e20;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.project.active .arrow {
+  transform: rotate(180deg);
+}
+
+/* Description hidden by default */
 .description {
   max-height: 0;
   overflow: hidden;
-  transition: max-height 0.4s ease;
+  transition: max-height 0.5s ease;
   margin-top: 0.5rem;
 }
 
-.description img {
-  width: 100%;
-  height: auto;
-  margin-top: 0.5rem;
-  border-radius: 8px;
-}
-
-/* ========== Contact / Footer ========== */
-#contact p, footer {
-  color: #4f6478;
-  font-size: 1rem;
-  margin-top: 1rem;
-}
-
+/* Footer */
 footer {
-  border-top: 1px solid #dbe5f1;
+  text-align: center;
   padding: 1.5rem 0;
+  background: #a5d6a7;
+  color: #1b5e20;
+  margin-top: 3rem;
 }
 
-/* ========== Mobile ========= */
-@media screen and (max-width: 600px) {
-  header h1 {
-    font-size: 2rem;
-  }
+/* Scroll Up Button */
+#scrollUp {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background: #2e7d32;
+  color: #fff;
+  border: none;
+  padding: 0.8rem 1rem;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  cursor: pointer;
+  display: none;
+  z-index: 100;
+}
 
-  section h2 {
-    font-size: 1.6rem;
-  }
-
+/* Mobile */
+@media(max-width: 600px) {
   nav ul {
     flex-direction: column;
     gap: 1rem;
