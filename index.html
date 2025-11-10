@@ -1,91 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Kelly Avalos | Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-  <header id="home">
+  <!-- Scroll to Top Button -->
+  <button id="scrollUp">&#8679;</button>
+
+  <!-- Navigation -->
+  <nav>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#wip">Work in Progress</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Header -->
+  <header>
     <h1>Kelly Avalos</h1>
     <p>Designer • Developer • Problem Solver</p>
-
-    <nav>
-      <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#work">Work in Progress</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
   </header>
 
+  <!-- About Me Section -->
   <section id="about">
     <h2>About Me</h2>
-    <p>Hi! I’m Kelly, a designer and developer passionate about creating intuitive and visually engaging experiences. I combine creativity with technical precision to build projects that feel thoughtful and functional.</p>
+    <p>I’m Kelly, a designer and developer passionate about creating functional, visually engaging experiences. I blend design thinking and technology to solve real-world problems. Outside of design, I enjoy martial arts, coding, and learning new languages.</p>
   </section>
 
-  <section id="work">
+  <!-- Work in Progress Section -->
+  <section id="wip">
     <h2>Work in Progress</h2>
     <div class="gallery">
-      <div class="image-card">
-        <img src="images/[wip1].jpg" alt="Work in Progress 1">
-        <h3>Work in Progress #1</h3>
+      <div class="project">
+        <img src="images/[wip1]" alt="WIP 1">
+        <div class="description">
+          <p>WIP 1 description here. Add progress images below.</p>
+          <img src="images/[wip1-progress1]" alt="Progress 1">
+          <img src="images/[wip1-progress2]" alt="Progress 2">
+        </div>
       </div>
-      <div class="image-card">
-        <img src="images/[wip2].jpg" alt="Work in Progress 2">
-        <h3>Work in Progress #2</h3>
+
+      <div class="project">
+        <img src="images/[wip2]" alt="WIP 2">
+        <div class="description">
+          <p>WIP 2 description here. Add progress images below.</p>
+          <img src="images/[wip2-progress1]" alt="Progress 1">
+        </div>
       </div>
     </div>
   </section>
 
+  <!-- Projects Section -->
   <section id="projects">
     <h2>Projects</h2>
     <div class="gallery">
       <div class="project">
-        <div class="project-header">
-          <h3>Project Title 1</h3>
-          <button class="toggle-btn">▼</button>
-        </div>
-        <img src="images/[photo1].jpg" alt="Project 1">
+        <img src="images/[project1]" alt="Project 1">
         <div class="description">
-          <p>Brief project description. You can add progress images here later.</p>
-          <img src="images/[progress1].jpg" alt="Progress photo">
+          <p>Project 1 description. Add progress images below.</p>
+          <img src="images/[project1-progress1]" alt="Progress 1">
         </div>
       </div>
 
       <div class="project">
-        <div class="project-header">
-          <h3>Project Title 2</h3>
-          <button class="toggle-btn">▼</button>
-        </div>
-        <img src="images/[photo2].jpg" alt="Project 2">
+        <img src="images/[project2]" alt="Project 2">
         <div class="description">
-          <p>Brief project description. You can add progress images here later.</p>
-          <img src="images/[progress2].jpg" alt="Progress photo">
+          <p>Project 2 description. Add progress images below.</p>
+          <img src="images/[project2-progress1]" alt="Progress 1">
+          <img src="images/[project2-progress2]" alt="Progress 2">
+        </div>
+      </div>
+
+      <div class="project">
+        <img src="images/[project3]" alt="Project 3">
+        <div class="description">
+          <p>Project 3 description. Add progress images below.</p>
+          <img src="images/[project3-progress1]" alt="Progress 1">
         </div>
       </div>
     </div>
   </section>
 
+  <!-- Contact Section -->
   <section id="contact">
     <h2>Contact</h2>
-    <p>Let’s connect!</p>
-    <p>
-      <a href="mailto:kelly.a.avalos1@gmail.com">Email</a> •
-      <a href="https://www.linkedin.com/in/kelly-avalos-9a08a82a6/">LinkedIn</a>
-    </p>
+    <p>📧 <a href="mailto:kelly.a.avalos1@gmail.com">kelly.a.avalos1@gmail.com</a> | 💼 <a href="https://www.linkedin.com/in/kelly-avalos-9a08a82a6/" target="_blank">LinkedIn</a></p>
   </section>
 
+  <!-- Footer -->
   <footer>
     © 2025 Kelly Avalos
   </footer>
 
-  <button id="scrollTopBtn">↑</button>
-
   <script src="main.js"></script>
 </body>
 </html>
-
